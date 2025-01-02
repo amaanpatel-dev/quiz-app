@@ -17,7 +17,19 @@
     font-weight: 500;
 }
 
-.btn:hover{
+.btn:hover:not([disabled]){
     background: #001e4d;
     color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+.correct{
+    background-color: #9aeabc;
+}
+
+.incorrect{
+    background-color: #ff9393;
 }
